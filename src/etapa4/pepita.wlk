@@ -5,19 +5,9 @@ import comidas.*
  */
 object pepita {
 	var energia = 0
-	method energia() {
-		
-		return energia
-	}
-	
-	method comer(cosa, gramos) { 
-		
-		energia += cosa.energiaPorGramo() * gramos
-	}
-	method volar(kms) {
-		
-		energia -= kms + 10
-	}
+	method energia() { return energia }
+	method comer(cosa, gramos) { energia += cosa.energiaPorGramo() * gramos }
+	method volar(kms) { energia -= kms + 10 }
 	
 	// metodos nuevos
 	
@@ -57,12 +47,14 @@ object pepita {
 	
 	method haceLoQueQuieras() { 
 		if (self.estaDebil()) {
-			self.comer(alpiste,20)
+			// completar
 		} 
 		// completar el método, de acuerdo a la estructura
 		// que se deja comentada aca abajo
- 		else if (self.estaFeliz()) {
- 			self.volar(8)
- 		} 
+//		else if (... otra condicion ...) {
+//			
+//		} else {
+//			
+//		}
 	}
 }
