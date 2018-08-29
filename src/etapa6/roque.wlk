@@ -24,8 +24,4 @@ object roque {
 	    pajaro.haceLoQueQuieras()
 		
 	}  
-	
-	method pupiloActual(){
-				return _pajaro
-			}
 }
